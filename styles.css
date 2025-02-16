@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.user-profile .profile-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+#username {
+    font-weight: bold;
+}
+
+#logout-button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+#logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* News Section */
+#news-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+}
+
+.news-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.news-card img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #1f1f1f;
+}
+
+.news-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.news-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1f1f1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.news-card a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
